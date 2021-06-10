@@ -7,13 +7,14 @@ import styled from "styled-components";
 
 const impact =
   "https://res.cloudinary.com/dtxylaqlc/raw/upload/v1621866668/FFTE%20Website/impact_tsbvtk.ttf";
-const impact2 = "../assets/fonts/Impact.woff";
+// const impact2 = "../assets/fonts/Impact.woff";
 
 const HeaderStyles = styled.header`
   @font-face {
     font-family: "impact";
     src: url(${impact});
-    src: url(${impact2}) format("woff");
+    font-weight: normal;
+    font-style: normal;
   }
 
   background: black;
