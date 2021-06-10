@@ -5,7 +5,21 @@ import Nav from "./Nav";
 
 import styled from "styled-components";
 
+const impact =
+  "https://res.cloudinary.com/dtxylaqlc/raw/upload/v1621866668/FFTE%20Website/impact_tsbvtk.ttf"
+
+
+
+
+
+
+
 const HeaderStyles = styled.header`
+@font-face {
+  font-family: "impact";
+  src: url(${impact}) format("ttf");
+}
+
   background: black;
   margin-bottom: 1.45rem;
 
