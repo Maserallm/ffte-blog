@@ -1,9 +1,9 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Nav from "./Nav"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import Nav from "./Nav";
 
-import styled from "styled-components"
+import styled from "styled-components";
 
 const HeaderStyles = styled.header`
   background: black;
@@ -50,7 +50,7 @@ const HeaderStyles = styled.header`
       padding: 1.45rem 0rem;
     }
   }
-`
+`;
 
 const Header = ({ siteTitle }) => (
   <HeaderStyles>
@@ -64,14 +64,14 @@ const Header = ({ siteTitle }) => (
       {/* <Nav /> */}
     </div>
   </HeaderStyles>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};
 
-export default Header
+export default Header;

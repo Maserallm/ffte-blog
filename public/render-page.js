@@ -3940,7 +3940,13 @@ var plugins = [{
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "deb06fdc3b409d05dd89e87ca899b707"
+    "cacheDigest": "09a85c5d02d823f5407da3ed18ad2e70"
+  }
+}, {
+  name: 'default-site-plugin',
+  plugin: __webpack_require__(/*! ./gatsby-ssr */ "./gatsby-ssr.js"),
+  options: {
+    "plugins": []
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
@@ -5300,6 +5306,31 @@ function stripPrefix(str, prefix = ``) {
 
 /***/ }),
 
+/***/ "./gatsby-ssr.js":
+/*!***********************!*\
+  !*** ./gatsby-ssr.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "wrapPageElement": () => (/* binding */ wrapPageElement)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _src_components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/components/layout */ "./src/components/layout.js");
+
+
+function wrapPageElement({
+  element,
+  props
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_components_layout__WEBPACK_IMPORTED_MODULE_1__.default, props, element);
+}
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-plugin-image/gatsby-ssr.js":
 /*!********************************************************!*\
   !*** ./node_modules/gatsby-plugin-image/gatsby-ssr.js ***!
@@ -5623,6 +5654,271 @@ exports.onRenderBody = function (_ref2) {
     sheetByPathname.delete(pathname);
   }
 };
+
+/***/ }),
+
+/***/ "./src/components/Footer.js":
+/*!**********************************!*\
+  !*** ./src/components/Footer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+
+const FooterStyles = styled_components__WEBPACK_IMPORTED_MODULE_2__.default.footer.withConfig({
+  displayName: "Footer__FooterStyles"
+})(["text-align:center;a{&:hover{color:var(--grey);}}padding:10%;"]);
+
+const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(FooterStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/"
+}, "Woo.Marc"), " an affliate of \xA9", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+  href: "https://www.farfromtheeast.com/"
+}, "FFTE "), new Date().getFullYear()));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
+/***/ "./src/components/Nav.js":
+/*!*******************************!*\
+  !*** ./src/components/Nav.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+
+const NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_2__.default.nav.withConfig({
+  displayName: "Nav__NavStyles"
+})([".logo{transform:translateY(-25%);}ul{margin:0;padding:0;text-align:center;list-style:none;display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:2rem;align-items:end;}a{font-size:1em;text-decoration:none;&[aria-current=\"page\"]{color:var(--grey);}}"]);
+
+const Nav = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(NavStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    href: "/"
+  }, "FEED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    href: "/eastendlinks"
+  }, "PODCAST")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    href: "/articles"
+  }, "ARTICLES"))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
+
+/***/ }),
+
+/***/ "./src/components/header.js":
+/*!**********************************!*\
+  !*** ./src/components/header.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Nav */ "./src/components/Nav.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+
+
+
+const HeaderStyles = styled_components__WEBPACK_IMPORTED_MODULE_4__.default.header.withConfig({
+  displayName: "header__HeaderStyles"
+})(["background:black;margin-bottom:1.45rem;div{margin:0 auto;width:100%;padding:1.45rem 1.0875rem;display:grid;grid-template-columns:auto;text-align:center;}.title{font-family:impact;font-size:3rem;color:white;text-decoration:none;}.title:hover{color:var(--red);animation:titleHover 0.5s;}@keyframes titleHover{from{color:white;}to{color:var(--red);}}@media (max-width:760px){}@media (max-width:450px){h1{font-size:0rem;}div{padding:1.45rem 0rem;}}"]);
+
+const Header = ({
+  siteTitle
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HeaderStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+  style: {
+    margin: 0
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  className: "title",
+  to: "/"
+}, "FFTE PRESENTS EASTEND LINK"))));
+
+Header.propTypes = {
+  siteTitle: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)
+};
+Header.defaultProps = {
+  siteTitle: ``
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+
+/***/ }),
+
+/***/ "./src/components/layout.js":
+/*!**********************************!*\
+  !*** ./src/components/layout.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3649515864.json */ "./public/page-data/sq/d/3649515864.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header */ "./src/components/header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
+/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! normalize.css */ "./node_modules/normalize.css/normalize.css");
+/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(normalize_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/GlobalStyles */ "./src/styles/GlobalStyles.js");
+/* harmony import */ var _styles_Typography__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/Typography */ "./src/styles/Typography.js");
+
+
+
+
+
+ // import Nav from "./Nav"
+
+
+
+
+
+const Layout = ({
+  children
+}) => {
+  var _data$site$siteMetada;
+
+  const data = _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_styles_Typography__WEBPACK_IMPORTED_MODULE_7__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_header__WEBPACK_IMPORTED_MODULE_3__.default, {
+    siteTitle: ((_data$site$siteMetada = data.site.siteMetadata) === null || _data$site$siteMetada === void 0 ? void 0 : _data$site$siteMetada.title) || `Title`
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, children)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__.default, null));
+};
+
+Layout.propTypes = {
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+/***/ }),
+
+/***/ "./src/styles/GlobalStyles.js":
+/*!************************************!*\
+  !*** ./src/styles/GlobalStyles.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+const GlobalStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle`
+:root {
+    --red: #FF4949;
+    --black: #000000;
+    --yellow: #ffc600;
+    --white: #fff;
+    --grey: #C8CBD8;
+  }
+
+html {
+    background: var(--black);
+    color: var(--white);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 2rem;
+    min-height: auto;
+    line-height: 1.5rem;
+  }
+
+
+`;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalStyles);
+
+/***/ }),
+
+/***/ "./src/styles/Typography.js":
+/*!**********************************!*\
+  !*** ./src/styles/Typography.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+const font = "../assets/fonts/Montserrat-Regular.ttf";
+const impact = "https://res.cloudinary.com/dtxylaqlc/raw/upload/v1621866668/FFTE%20Website/impact_tsbvtk.ttf";
+const Typography = styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle`
+
+@font-face {
+    font-family: "montserrat";
+    src: url(${font}) format("ttf");
+}
+
+@font-face {
+    font-family: "impact";
+    src: url(${impact}) format("ttf");
+}
+
+html {
+    font-family: 'montserrat','Helvetica Neue', sans-serif;
+    color: var(--white);
+}
+
+a {
+    color: var(--red);
+}
+
+a:hover {
+    color: var(--grey);
+    animation: hover 0.5s;
+}
+
+@keyframes hover {
+    from {color: var(--red)}
+    to {color: var(--grey)}
+}
+
+
+
+
+
+`;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Typography);
 
 /***/ }),
 
@@ -10021,6 +10317,16 @@ function mitt(all                 ) {
 
 /***/ }),
 
+/***/ "./node_modules/normalize.css/normalize.css":
+/*!**************************************************!*\
+  !*** ./node_modules/normalize.css/normalize.css ***!
+  \**************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -12410,25 +12716,36 @@ function v(){return(v=Object.assign||function(e){for(var t=1;t<arguments.length;
 
 /***/ }),
 
-/***/ "react-dom/server":
-/*!***************************************************************************************************!*\
-  !*** external "/Users/Maserall/Desktop/dev/ffte-blog/ffte-blog/node_modules/react-dom/server.js" ***!
-  \***************************************************************************************************/
+/***/ "./public/page-data/sq/d/3649515864.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3649515864.json ***!
+  \***********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/Maserall/Desktop/dev/ffte-blog/ffte-blog/node_modules/react-dom/server.js");;
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"FFTE BLOG"}}}}');
+
+/***/ }),
+
+/***/ "react-dom/server":
+/*!*****************************************************************************************!*\
+  !*** external "/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react-dom/server.js" ***!
+  \*****************************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react-dom/server.js");;
 
 /***/ }),
 
 /***/ "react":
-/*!**********************************************************************************************!*\
-  !*** external "/Users/Maserall/Desktop/dev/ffte-blog/ffte-blog/node_modules/react/index.js" ***!
-  \**********************************************************************************************/
+/*!************************************************************************************!*\
+  !*** external "/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react/index.js" ***!
+  \************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/Maserall/Desktop/dev/ffte-blog/ffte-blog/node_modules/react/index.js");;
+module.exports = require("/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react/index.js");;
 
 /***/ }),
 
