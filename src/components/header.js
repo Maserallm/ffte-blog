@@ -6,19 +6,15 @@ import Nav from "./Nav";
 import styled from "styled-components";
 
 const impact =
-  "https://res.cloudinary.com/dtxylaqlc/raw/upload/v1621866668/FFTE%20Website/impact_tsbvtk.ttf"
-
-
-
-
-
-
+  "https://res.cloudinary.com/dtxylaqlc/raw/upload/v1621866668/FFTE%20Website/impact_tsbvtk.ttf";
+const impact2 = "../assets/fonts/Impact.woff";
 
 const HeaderStyles = styled.header`
-@font-face {
-  font-family: "impact";
-  src: url(${impact}) format("ttf");
-}
+  @font-face {
+    font-family: "impact";
+    src: url(${impact});
+    src: url(${impact2}) format("woff");
+  }
 
   background: black;
   margin-bottom: 1.45rem;
