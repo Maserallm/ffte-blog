@@ -1,9 +1,9 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import styled from "styled-components"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 
-import Seo from "../components/seo"
+import Seo from "../components/seo";
 
 const HomePageStyles = styled.div`
   display: grid;
@@ -56,7 +56,7 @@ const HomePageStyles = styled.div`
       height: 100%;
     }
   }
-`
+`;
 
 const IndexPage = () => (
   <HomePageStyles>
@@ -65,7 +65,7 @@ const IndexPage = () => (
       <iframe
         width="760"
         height="420"
-        src="https://www.youtube.com/embed/ljp9jS_mFCI?controls=0"
+        src="https://www.youtube.com/embed/q8njk-8TQzs"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -73,6 +73,6 @@ const IndexPage = () => (
       ></iframe>
     </div>
   </HomePageStyles>
-)
+);
 
-export default IndexPage
+export default IndexPage;
