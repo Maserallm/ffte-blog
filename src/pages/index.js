@@ -46,7 +46,9 @@ const HomePageStyles = styled.div`
 
   @media (max-width: 450px) {
     .youtube {
-      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      height: 40vh;
     }
 
     .youtubeFrame {

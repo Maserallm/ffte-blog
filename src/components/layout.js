@@ -16,11 +16,20 @@ const BorderStyles = styled.div`
   display: grid;
   gap: 10px;
   padding: 5px;
+
+  @media (max-width: 450px) {
+    display: flex;
+  }
 `;
 const ContentStyles = styled.div`
   padding: 1rem;
   display: grid;
   gap: 10px;
+
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Layout = ({ children }) => {
