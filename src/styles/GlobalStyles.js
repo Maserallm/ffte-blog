@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -19,11 +19,11 @@ img {
 }
 
 body {
-    margin: 2rem;
+    margin: 1rem;
     min-height: auto;
     line-height: 1.5rem;
   }
 
 
-`
-export default GlobalStyles
+`;
+export default GlobalStyles;

@@ -15,6 +15,7 @@ const HomePageStyles = styled.div`
     align-items: center;
     align-content: center;
     height: auto;
+    gap: 20px;
   }
 
   .youtubeFrame {
@@ -45,7 +46,7 @@ const HomePageStyles = styled.div`
 
   @media (max-width: 450px) {
     .youtube {
-      height: 30vh;
+      height: 90%;
     }
 
     .youtubeFrame {
@@ -66,6 +67,16 @@ const IndexPage = () => (
         width="760"
         height="420"
         src="https://www.youtube.com/embed/4ffwKEPOi9s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="760"
+        height="420"
+        src="https://www.youtube.com/embed/ljp9jS_mFCI"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

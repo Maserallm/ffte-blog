@@ -1,6 +1,6 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import * as React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const FooterStyles = styled.footer`
   text-align: center;
@@ -10,8 +10,8 @@ const FooterStyles = styled.footer`
     }
   }
 
-  padding: 10%;
-`
+  padding: 2%;
+`;
 
 const Footer = () => (
   <FooterStyles>
@@ -21,6 +21,6 @@ const Footer = () => (
       {new Date().getFullYear()}
     </p>
   </FooterStyles>
-)
+);
 
-export default Footer
+export default Footer;
