@@ -18,7 +18,7 @@ const HeaderStyles = styled.header`
   }
 
   background: black;
-  margin-bottom: 1.45rem;
+  // margin-bottom: 1.45rem;
 
   div {
     margin: 0 auto;
@@ -58,7 +58,7 @@ const HeaderStyles = styled.header`
     }
 
     div {
-      padding: 1.45rem 0rem;
+      padding: 2rem 0rem;
     }
   }
 `;
