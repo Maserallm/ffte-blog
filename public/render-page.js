@@ -5810,10 +5810,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const BorderStyles = styled_components__WEBPACK_IMPORTED_MODULE_8__.default.div.withConfig({
   displayName: "layout__BorderStyles"
-})(["padding:1rem;display:grid;gap:10px;padding:5px;"]);
+})(["padding:1rem;display:grid;gap:10px;padding:5px;@media (max-width:450px){display:flex;}"]);
 const ContentStyles = styled_components__WEBPACK_IMPORTED_MODULE_8__.default.div.withConfig({
   displayName: "layout__ContentStyles"
-})(["padding:1rem;display:grid;gap:10px;"]);
+})(["padding:1rem;display:grid;gap:10px;@media (max-width:450px){display:flex;flex-direction:column;}"]);
 
 const Layout = ({
   children

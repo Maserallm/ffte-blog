@@ -48,7 +48,7 @@ const HomePageStyles = styled.div`
     .youtube {
       display: flex;
       flex-direction: column;
-      height: 40vh;
+      height: 50vh;
     }
 
     .youtubeFrame {
@@ -65,6 +65,16 @@ const IndexPage = () => (
   <HomePageStyles>
     <Seo title="Home" />
     <div className="youtube">
+      <iframe
+        width="760"
+        height="420"
+        src="https://www.youtube.com/embed/lIyvORcUn_U"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
       <iframe
         width="760"
         height="420"
