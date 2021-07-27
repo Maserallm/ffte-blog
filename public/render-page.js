@@ -5752,7 +5752,7 @@ const impact = "https://res.cloudinary.com/dtxylaqlc/raw/upload/v1621866668/FFTE
 
 const HeaderStyles = styled_components__WEBPACK_IMPORTED_MODULE_4__.default.header.withConfig({
   displayName: "header__HeaderStyles"
-})(["@font-face{font-family:\"impact\";src:url(", ");font-weight:normal;font-style:normal;}background:black;div{margin:0 auto;width:100%;padding:1.45rem 1.0875rem;display:grid;grid-template-columns:auto;text-align:center;}.title{font-family:impact;font-size:3rem;color:white;text-decoration:none;}.title:hover{color:var(--red);animation:titleHover 0.5s;}@keyframes titleHover{from{color:white;}to{color:var(--red);}}@media (max-width:760px){}@media (max-width:450px){h1{font-size:0rem;}div{padding:2rem 0rem;}}"], impact);
+})(["@font-face{font-family:\"impact\";src:url(", ");font-weight:normal;font-style:normal;}background:black;div{margin:0 auto;width:100%;padding:1.45rem 1.0875rem;display:grid;grid-template-columns:auto;text-align:center;}.title{font-family:impact;font-size:3rem;color:white;text-decoration:none;}.title:hover{color:var(--red);animation:titleHover 0.5s;}@keyframes titleHover{from{color:white;}to{color:var(--red);}}@media (max-width:760px){}@media (max-width:450px){display:flex;position:relative;h1{font-size:0rem;}div{padding:2rem 0rem;}}"], impact);
 
 const Header = ({
   siteTitle

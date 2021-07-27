@@ -11,6 +11,13 @@ const FooterStyles = styled.footer`
   }
 
   padding: 2%;
+
+  @media (max-width: 450px) {
+    div {
+      position: relative;
+      top: 120px;
+    }
+  }
 `;
 
 const Footer = () => (

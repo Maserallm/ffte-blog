@@ -49,6 +49,8 @@ const HomePageStyles = styled.div`
       display: flex;
       flex-direction: column;
       height: 50vh;
+      position: relative;
+      top: 60px;
     }
 
     .youtubeFrame {

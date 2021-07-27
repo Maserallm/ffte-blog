@@ -53,6 +53,8 @@ const HeaderStyles = styled.header`
   @media (max-width: 760px) {
   }
   @media (max-width: 450px) {
+    display: flex;
+    position: relative;
     h1 {
       font-size: 0rem;
     }
