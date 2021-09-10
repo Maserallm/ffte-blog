@@ -1,6 +1,6 @@
 import React from "react";
 
-export default VideoiFrame = ({ videoSrcUrl, videoTitle }) => {
+export default function VideoiFrame({ videoSrcUrl, videoTitle }) {
   return (
     <div className="youtube">
       <iframe
@@ -16,4 +16,4 @@ export default VideoiFrame = ({ videoSrcUrl, videoTitle }) => {
       ></iframe>
     </div>
   );
-};
+}

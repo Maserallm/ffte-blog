@@ -4,6 +4,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 import Seo from "../components/seo";
+import VideoiFrame from "../components/VideoiFrame";
+import Playlist from "../components/PlaylistStyles";
 
 const HomePageStyles = styled.div`
   display: grid;
@@ -48,8 +50,17 @@ const HomePageStyles = styled.div`
     .youtube {
       display: flex;
       flex-direction: column;
-      height: 50vh;
+      gap: 10px;
+      height: 30vh;
       position: relative;
+      top: 60px;
+    }
+
+    .player {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 100%;
       top: 60px;
     }
 
@@ -66,36 +77,29 @@ const HomePageStyles = styled.div`
 const IndexPage = () => (
   <HomePageStyles>
     <Seo title="Home" />
-    <div className="youtube">
-      <iframe
-        width="760"
-        height="420"
-        src="https://www.youtube.com/embed/lIyvORcUn_U"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+    <div className="post">
+      <Playlist
+        className="player"
+        playerUrl="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1122566086&color=%23141316&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        profileUrl="https://soundcloud.com/eazyffte"
+        profileName=""
+        playlistUrl="https://soundcloud.com/eazyffte/the-playlist-ep-1"
+        playlistTitle=""
+      />
+      <VideoiFrame
+        videoSrcUrl="https://www.youtube.com/embed/lIyvORcUn_U"
+        videoTitle="YouTube video player"
+      />
 
-      <iframe
-        width="760"
-        height="420"
-        src="https://www.youtube.com/embed/4ffwKEPOi9s"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <VideoiFrame
+        videoSrcUrl="https://www.youtube.com/embed/4ffwKEPOi9s"
+        videoTitle="Eastend Links X FFTE For Real BTS"
+      />
 
-      <iframe
-        width="760"
-        height="420"
-        src="https://www.youtube.com/embed/ljp9jS_mFCI"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <VideoiFrame
+        videoSrcUrl="https://www.youtube.com/embed/ljp9jS_mFCI"
+        videoTitle="FFTE Presents Eastend Link"
+      />
     </div>
   </HomePageStyles>
 );

@@ -20,15 +20,20 @@ const HeaderStyles = styled.header`
   background: black;
   // margin-bottom: 1.45rem;
 
-  div {
-    margin: 0 auto;
-    width: 100%;
-    padding: 1.45rem 1.0875rem;
-    display: grid;
-    grid-template-columns: auto;
-    text-align: center;
-  }
+  // div {
+  //   margin: 0 auto;
+  //   width: 100%;
+  //   padding: 1.45rem 1.0875rem;
+  //   display: grid;
+  //   grid-template-columns: auto;
+  //   text-align: center;
+  // }
 
+  h1 {
+    text-align: center;
+    margin: 50px
+  }
+  
   .title {
     font-family: impact;
     font-size: 3rem;
@@ -50,18 +55,18 @@ const HeaderStyles = styled.header`
     }
   }
 
-  @media (max-width: 760px) {
-  }
-  @media (max-width: 450px) {
-    display: flex;
-    position: relative;
-    h1 {
-      font-size: 0rem;
-    }
+  // @media (max-width: 760px) {
+  // }
+  // @media (max-width: 450px) {
+  //   display: flex;
+  //   position: relative;
+  //   h1 {
+  //     font-size: 0rem;
+  //   }
 
-    div {
-      padding: 2rem 0rem;
-    }
+  //   div {
+  //     padding: 2rem 0rem;
+  //   }
   }
 `;
 

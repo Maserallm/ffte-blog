@@ -5677,7 +5677,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const FooterStyles = styled_components__WEBPACK_IMPORTED_MODULE_2__.default.footer.withConfig({
   displayName: "Footer__FooterStyles"
-})(["text-align:center;a{&:hover{color:var(--grey);}}padding:2%;"]);
+})(["text-align:center;a{&:hover{color:var(--grey);}}padding:2%;@media (max-width:450px){div{position:relative;top:120px;}}"]);
 
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(FooterStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/"

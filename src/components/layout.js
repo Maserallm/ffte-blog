@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import "normalize.css";
 import GlobalStyles from "../styles/GlobalStyles";
 import Typography from "../styles/Typography";
+import Post from "../styles/Post";
 
 const BorderStyles = styled.div`
   padding: 1rem;
@@ -19,6 +20,7 @@ const BorderStyles = styled.div`
 
   @media (max-width: 450px) {
     display: flex;
+    flex-direction: column;
   }
 `;
 const ContentStyles = styled.div`
@@ -47,14 +49,15 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyles />
       <Typography />
+      <Post />
       <BorderStyles>
-        <ContentStyles>
-          {/* <Nav /> */}
-          <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-          {children}
-          <Footer />
-        </ContentStyles>
+        {/* <ContentStyles> */}
+        {/* <Nav /> */}
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <main>{children}</main>
+        {/* </ContentStyles> */}
       </BorderStyles>
+      <Footer />
     </>
   );
 };
