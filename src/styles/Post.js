@@ -5,8 +5,8 @@ const Posts = createGlobalStyle`
     display: grid;
     grid-template-columns: 3fr 12fr 5fr;
     max-width: 1000px;
-    gap: 10px 50px;
-    margin: 200px auto;
+    gap: 30px 50px;
+    margin: 70px auto;
   }
   
   .post > * {
@@ -38,7 +38,7 @@ const Posts = createGlobalStyle`
   
 
 
-  @media(max-width: 400px) {
+  @media(max-width: 450px) {
     .post > * {
         grid-column: 1 / -1;
         gap: 10px;

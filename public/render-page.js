@@ -5752,7 +5752,7 @@ const impact = "https://res.cloudinary.com/dtxylaqlc/raw/upload/v1621866668/FFTE
 
 const HeaderStyles = styled_components__WEBPACK_IMPORTED_MODULE_4__.default.header.withConfig({
   displayName: "header__HeaderStyles"
-})(["@font-face{font-family:\"impact\";src:url(", ");font-weight:normal;font-style:normal;}background:black;div{margin:0 auto;width:100%;padding:1.45rem 1.0875rem;display:grid;grid-template-columns:auto;text-align:center;}.title{font-family:impact;font-size:3rem;color:white;text-decoration:none;}.title:hover{color:var(--red);animation:titleHover 0.5s;}@keyframes titleHover{from{color:white;}to{color:var(--red);}}@media (max-width:760px){}@media (max-width:450px){display:flex;position:relative;h1{font-size:0rem;}div{padding:2rem 0rem;}}"], impact);
+})(["@font-face{font-family:\"impact\";src:url(", ");font-weight:normal;font-style:normal;}background:black;h1{text-align:center;margin:50px}.title{font-family:impact;font-size:3rem;color:white;text-decoration:none;}.title:hover{color:var(--red);animation:titleHover 0.5s;}@keyframes titleHover{from{color:white;}to{color:var(--red);}}}"], impact);
 
 const Header = ({
   siteTitle
@@ -5791,13 +5791,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header */ "./src/components/header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
 /* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! normalize.css */ "./node_modules/normalize.css/normalize.css");
 /* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(normalize_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/GlobalStyles */ "./src/styles/GlobalStyles.js");
 /* harmony import */ var _styles_Typography__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/Typography */ "./src/styles/Typography.js");
+/* harmony import */ var _styles_Post__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/Post */ "./src/styles/Post.js");
 
 
 
@@ -5808,10 +5809,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const BorderStyles = styled_components__WEBPACK_IMPORTED_MODULE_8__.default.div.withConfig({
+
+const BorderStyles = styled_components__WEBPACK_IMPORTED_MODULE_9__.default.div.withConfig({
   displayName: "layout__BorderStyles"
-})(["padding:1rem;display:grid;gap:10px;padding:5px;@media (max-width:450px){display:flex;}"]);
-const ContentStyles = styled_components__WEBPACK_IMPORTED_MODULE_8__.default.div.withConfig({
+})(["padding:1rem;display:grid;gap:10px;padding:5px;@media (max-width:450px){display:flex;flex-direction:column;}"]);
+const ContentStyles = styled_components__WEBPACK_IMPORTED_MODULE_9__.default.div.withConfig({
   displayName: "layout__ContentStyles"
 })(["padding:1rem;display:grid;gap:10px;@media (max-width:450px){display:flex;flex-direction:column;}"]);
 
@@ -5821,9 +5823,9 @@ const Layout = ({
   var _data$site$siteMetada;
 
   const data = _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_styles_Typography__WEBPACK_IMPORTED_MODULE_7__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(BorderStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(ContentStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_header__WEBPACK_IMPORTED_MODULE_3__.default, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_styles_Typography__WEBPACK_IMPORTED_MODULE_7__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_styles_Post__WEBPACK_IMPORTED_MODULE_8__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(BorderStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_header__WEBPACK_IMPORTED_MODULE_3__.default, {
     siteTitle: ((_data$site$siteMetada = data.site.siteMetadata) === null || _data$site$siteMetada === void 0 ? void 0 : _data$site$siteMetada.title) || `Title`
-  }), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__.default, null))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, children)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__.default, null));
 };
 
 Layout.propTypes = {
@@ -5873,6 +5875,76 @@ body {
 
 `;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalStyles);
+
+/***/ }),
+
+/***/ "./src/styles/Post.js":
+/*!****************************!*\
+  !*** ./src/styles/Post.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+const Posts = styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle`
+.post {
+    display: grid;
+    grid-template-columns: 3fr 12fr 5fr;
+    max-width: 1000px;
+    gap: 10px 50px;
+    margin: 200px auto;
+  }
+  
+  .post > * {
+    grid-column: 2 / -2;
+  }
+  
+  .post > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  
+  .post > figure {
+    width: 100%;
+    margin: 0;
+    grid-column: 1 / -1;
+  }
+  
+  figcaption {
+    font-size: 10px;
+  }
+  
+  .post > blockquote {
+    margin: 0;
+    grid-column: 1 / -1;
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+  }
+  
+
+
+  @media(max-width: 400px) {
+    .post > * {
+        grid-column: 1 / -1;
+        gap: 10px;
+      }
+    
+    .post > blockquote {
+        font-size: 30px;
+    }
+
+    
+
+  }
+
+`;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Posts);
 
 /***/ }),
 
@@ -12737,24 +12809,24 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"FFTE BLOG
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*****************************************************************************************!*\
-  !*** external "/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react-dom/server.js" ***!
-  \*****************************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react-dom/server.js");;
-
-/***/ }),
-
-/***/ "react":
 /*!************************************************************************************!*\
-  !*** external "/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react/index.js" ***!
+  !*** external "/Users/nadiagracekadri/ffte-blog/node_modules/react-dom/server.js" ***!
   \************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/Maserall/Desktop/dev/ffte-blog/node_modules/react/index.js");;
+module.exports = require("/Users/nadiagracekadri/ffte-blog/node_modules/react-dom/server.js");;
+
+/***/ }),
+
+/***/ "react":
+/*!*******************************************************************************!*\
+  !*** external "/Users/nadiagracekadri/ffte-blog/node_modules/react/index.js" ***!
+  \*******************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("/Users/nadiagracekadri/ffte-blog/node_modules/react/index.js");;
 
 /***/ }),
 

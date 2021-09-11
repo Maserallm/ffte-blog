@@ -3,22 +3,9 @@ import styled from "styled-components";
 
 const PlaylistStyles = styled.div`
   div {
-    font-size: 10px;
-    color: #cccccc;
-    line-break: anywhere;
-    word-break: normal;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
-      Garuda, Verdana, Tahoma, sans-serif;
-    font-weight: 100;
-  }
+    height: 100px;
 
-  a {
-    color: #cccccc;
-    text-decoration: none;
-  }
+
 `;
 
 export default function Playlist({
@@ -29,7 +16,7 @@ export default function Playlist({
   playlistUrl
 }) {
   return (
-    <>
+    <PlaylistStyles>
       <iframe
         className="player"
         width="100%"
@@ -48,6 +35,6 @@ export default function Playlist({
           {playlistTitle}
         </a>
       </PlaylistStyles> */}
-    </>
+    </PlaylistStyles>
   );
 }

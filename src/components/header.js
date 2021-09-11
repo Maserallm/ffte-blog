@@ -57,16 +57,18 @@ const HeaderStyles = styled.header`
 
   // @media (max-width: 760px) {
   // }
-  // @media (max-width: 450px) {
-  //   display: flex;
-  //   position: relative;
-  //   h1 {
-  //     font-size: 0rem;
-  //   }
+  @media (max-width: 450px) {
+    // display: flex;
+    // position: relative;
+    // h1 {
+    //   font-size: 0rem;
+    // }
 
   //   div {
   //     padding: 2rem 0rem;
   //   }
+
+  line-height: 3rem;
   }
 `;
 
